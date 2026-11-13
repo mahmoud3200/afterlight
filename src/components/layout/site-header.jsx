@@ -18,7 +18,10 @@ export default function SiteHeader({ onOpenMenu, menuOpen, story = false }) {
         </Link>
         {story ? (
           <>
-            <GradientLine orientation="horizontal" className="w-10 sm:w-20" />
+            <GradientLine
+              orientation="horizontal"
+              className="hidden w-20 lg:block"
+            />
             <span className="ml-3 text-xs tracking-[0.2em] text-paper">
               AFTERLIGHT
             </span>
@@ -27,18 +30,18 @@ export default function SiteHeader({ onOpenMenu, menuOpen, story = false }) {
           <>
             <GradientLine
               orientation="horizontal"
-              className="w-[clamp(24px,12vw,186px)]"
+              className="hidden w-[clamp(24px,12vw,186px)] lg:block"
             />
             <Image
               src="/images/special-star.svg"
               alt="NASA Space Apps Challenge"
               width={44}
               height={44}
-              className="size-11"
+              className="hidden size-11 lg:block"
             />
             <GradientLine
               orientation="horizontal"
-              className="w-[clamp(24px,12vw,186px)]"
+              className="hidden w-[clamp(24px,12vw,186px)] lg:block"
             />
           </>
         )}
@@ -50,7 +53,7 @@ export default function SiteHeader({ onOpenMenu, menuOpen, story = false }) {
         aria-controls="site-menu"
         aria-expanded={menuOpen}
         onClick={onOpenMenu}
-        className="mt-8.25 flex flex-col items-end gap-1.75 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-paper"
+        className="h-full flex flex-col items-center justify-center gap-1.75 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-paper"
       >
         <MenuMark className="w-14.25 lg:w-18" />
       </button>

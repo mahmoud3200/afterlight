@@ -321,6 +321,62 @@
       "sha256": "5dd4146d342c1d32ec61a26aac973d7011e1bbfa74e42a6c1f280bf5e98c4107",
       "transformations": "None; CSS cover placement and scrim only",
       "status": "Artistic chapter backdrop; not archival mission photography"
+    },
+    {
+      "id": "space-background",
+      "path": "/images/chapter/space-background.png",
+      "source": "User-provided attachment: codex-clipboard-4f353c4c-76e0-4171-967f-42281ab4edf9.png",
+      "download": null,
+      "credit": "Team-supplied artwork; original creator not supplied",
+      "usagePolicy": "Original license and redistribution terms not supplied.",
+      "chapters": [
+        "chapter-8",
+        "chapter-9",
+        "chapter-10"
+      ],
+      "format": "PNG",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1884419,
+      "sha256": "fd631b5a8b786adf965dbef6d67d0c563e40ea80e5a2df042bb0086c660ade90",
+      "transformations": "None; original attachment copied unchanged. Runtime cover cropping and dark overlay.",
+      "limitations": "Artistic space background including Earth and hardware; not a documentary depiction of the featured spacecraft or their locations."
+    },
+    {
+      "id": "introduction-background",
+      "path": "/images/chapter/introduction-background.jpg",
+      "source": "User-provided attachment: codex-clipboard-6f791545-02c7-49e7-b897-c9584a9c4f2f.jpg",
+      "download": null,
+      "credit": "Team-supplied artwork; original creator not supplied",
+      "usagePolicy": "Original license and redistribution terms not supplied.",
+      "chapters": [
+        "introduction"
+      ],
+      "format": "JPEG",
+      "width": 1372,
+      "height": 784,
+      "bytes": 380093,
+      "sha256": "b7a605f7ed96cfb4e67ec93c798fa9f8fc4bde00e5b89ca218199a6ae1fc3ff8",
+      "transformations": "None; original attachment copied unchanged. Runtime cover cropping and dark overlay.",
+      "limitations": "Decorative space imagery; not documentary evidence of a featured mission."
+    },
+    {
+      "id": "ending-background",
+      "path": "/images/chapter/ending-background.jpg",
+      "source": "User-provided image: Gemini_Generated_Image_fezf3dfezf3dfezf.jpg",
+      "download": null,
+      "credit": "Team-supplied generated artwork (Gemini filename)",
+      "usagePolicy": "Original license and redistribution terms not supplied.",
+      "chapters": [
+        "ending"
+      ],
+      "format": "JPEG",
+      "width": 1262,
+      "height": 832,
+      "bytes": 462885,
+      "sha256": "7a5c01e6c9ae22feb338493ce2baecb4c3c9e29edfa0b46bf23b790655f5e9e6",
+      "transformations": "None; supplied image copied unchanged. Runtime cover cropping and dark overlay.",
+      "limitations": "Artistic rover illustration, not a documentary photograph or evidence of mission conditions."
     }
   ],
   "artifacts": [

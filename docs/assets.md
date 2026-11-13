@@ -111,3 +111,21 @@ For future conversions: open `.blend` with automatic Python execution disabled; 
 - ALSEP, Surveyor 3, Sojourner, and Phoenix remain image fallbacks; their FR-03 3D coverage gaps remain open. Pioneer 11 is visibly labeled as a Pioneer 10 proxy. The Apollo LM is labeled as the complete mission-era vehicle.
 - Narrative audio paths are deliberately empty, pending ElevenLabs recordings. No narration coverage is claimed. Ambient audio remains separate.
 - Verified: production route generation; all content/asset paths; model loading across all ten GLBs; selected orbit controls; object switching; image fallback rendering; introduction/ending without scene imagery; transcript fade removal at scroll end. Full mobile hardware performance, reduced-motion device testing, narration playback, and exhaustive error injection remain outstanding.
+
+
+## Chapter backgrounds — 2026-11-14
+
+- Team-supplied space artwork: `/images/chapter/space-background.png`, from attachment `codex-clipboard-4f353c4c-76e0-4171-967f-42281ab4edf9.png`. Used by chapters 8–10; replaces the Hubble star field.
+
+Original image copied unchanged; CSS cover cropping and darkening apply. Original author, source URL, and license were not supplied. Artistic scenery including Earth and hardware is not evidence of featured spacecraft locations.
+
+Model inspection (FR-08/19): slower orbit/zoom, softer damping, grab/grabbing cursors, slow idle orbit paused by pointer/zoom/keyboard inspection and resumed after two seconds. Reduced-motion preference disables idle rotation. Image-only FR-03 gaps remain unchanged.
+
+
+## Introduction background — 2026-11-14
+
+Team-supplied `/images/chapter/introduction-background.jpg`, from attachment `codex-clipboard-6f791545-02c7-49e7-b897-c9584a9c4f2f.jpg`. Copied unchanged; existing cover cropping and dark overlay apply. Original author, source URL, and license were not supplied. Decorative space imagery, not documentary mission evidence.
+
+## Ending background — 2026-11-14
+
+Team-supplied `/images/chapter/ending-background.jpg`, from `Gemini_Generated_Image_fezf3dfezf3dfezf.jpg`. Generated artwork per supplied filename; artistic rover illustration, not documentary mission imagery. Copied unchanged; existing cover cropping and dark overlay apply. Original license and redistribution terms were not supplied.

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function SiteBrand() {
   return (
-    <div className="flex items-center gap-3 md:gap-6">
+    <div className="flex w-full items-center justify-center gap-3 text-center md:gap-6 lg:w-auto lg:justify-start lg:text-left">
       <Image
         src="/images/nasa-space-app-challenge-logo.svg"
         alt=""

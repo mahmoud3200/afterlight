@@ -10,7 +10,7 @@ export const CHAPTERS = [
     region: "Introduction",
     kind: "introduction",
     audio: "/audio/chapters/introduction.mp3",
-    backgroundImage: "",
+    backgroundImage: "/images/chapter/introduction-background.jpg",
     text: [
       "Across the Moon and Mars, exploration has left behind more than footprints. There are landers, rovers, instruments, and spacecraft that once carried out extraordinary missions — and then fell silent.",
       "Each one represents a moment when humanity reached beyond its own world, exploring places we had never truly known.",
@@ -503,7 +503,7 @@ export const CHAPTERS = [
     region: "Beyond the Moon and Mars",
     kind: "chapter",
     audio: "",
-    backgroundImage: "",
+    backgroundImage: "/images/chapter/space-background.png",
     text: [],
     artifacts: [
       {
@@ -579,7 +579,7 @@ export const CHAPTERS = [
     region: "Beyond the Moon and Mars",
     kind: "chapter",
     audio: "",
-    backgroundImage: "",
+    backgroundImage: "/images/chapter/space-background.png",
     text: [],
     artifacts: [
       {
@@ -655,7 +655,7 @@ export const CHAPTERS = [
     region: "Beyond the Moon and Mars",
     kind: "chapter",
     audio: "",
-    backgroundImage: "",
+    backgroundImage: "/images/chapter/space-background.png",
     text: [],
     artifacts: [
       {
@@ -699,7 +699,7 @@ export const CHAPTERS = [
     region: "The legacy remains",
     kind: "ending",
     audio: "/audio/chapters/ending.mp3",
-    backgroundImage: "",
+    backgroundImage: "/images/chapter/ending-background.jpg",
     text: [
       "Some journeys end on distant surfaces. Others continue silently through space.",
       "Across the Moon, Mars, and beyond, these machines represent more than abandoned technology. They represent the questions humanity dared to ask and the extraordinary distances we travelled to find answers.",

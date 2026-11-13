@@ -7,7 +7,7 @@ export default function JourneyNav({ previous, next }) {
   return (
     <nav
       aria-label="Story navigation"
-      className={`flex h-17.75 w-full min-w-0 max-w-full shrink items-center lg:shrink-0 overflow-hidden border-2 border-paper bg-pill ${previous ? "lg:w-123.25 rounded-[36.5px]" : "lg:w-71 rounded-tl-xl rounded-tr-[36.5px] rounded-br-[36.5px] rounded-bl-none"}`}
+      className={`flex h-17.75 w-full min-w-0 max-w-full shrink items-center lg:shrink-0 overflow-hidden border-2 border-paper bg-pill ${previous ? "lg:w-123.25 rounded-[36.5px]" : "rounded-full lg:w-71 lg:rounded-tl-xl lg:rounded-tr-[36.5px] lg:rounded-br-[36.5px] lg:rounded-bl-none"}`}
     >
       {previous && (
         <Link href={previous.href} className={linkClass}>

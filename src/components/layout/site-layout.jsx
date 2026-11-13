@@ -41,7 +41,7 @@ export default function SiteLayout({ children, chapters }) {
               : active?.backgroundImage || ""
           }
         />
-        <div className="relative mx-auto flex min-h-svh w-full flex-col pl-5 pr-10 pt-8.25">
+        <div className="relative mx-auto flex min-h-svh w-full flex-col px-5 pt-8.25 lg:pr-10">
           <div className="relative grid flex-1 grid-rows-[auto_minmax(0,1fr)_auto]">
             <SiteHeader
               story={!isHome}
@@ -61,7 +61,7 @@ export default function SiteLayout({ children, chapters }) {
               </main>
               {isHome && <div aria-hidden="true" className="hidden lg:block" />}
             </div>
-            <footer className="flex flex-wrap items-end justify-between gap-x-8 gap-y-6 pb-7.5 pl-8.25">
+            <footer className="flex flex-wrap items-end justify-between gap-x-8 gap-y-6 pb-7.5 lg:pl-8.25">
               <SiteBrand />
               <JourneyNav
                 previous={isHome ? null : previous}
