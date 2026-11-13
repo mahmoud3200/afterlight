@@ -170,7 +170,10 @@ export default function SiteMenu({ ref, pageRef, chapters, onOpenChange }) {
             aria-pressed={soundEnabled}
             className="flex min-h-11 cursor-pointer items-center gap-2 text-xs"
           >
-            <AudioLines size={27} aria-hidden="true" /> Sound:{" "}
+            <span aria-hidden="true" className="relative inline-flex size-[27px] shrink-0 items-center justify-center">
+              <AudioLines size={27} />
+              {!soundEnabled && <span className="pointer-events-none absolute h-0.5 w-8 -rotate-45 rounded-full bg-current" />}
+            </span> Sound:{" "}
             {soundEnabled
               ? "on"
               : soundStatus === "blocked"
@@ -179,7 +182,7 @@ export default function SiteMenu({ ref, pageRef, chapters, onOpenChange }) {
                   ? "unavailable"
                   : "off"}
           </button>
-          <button onClick={close} className="flex size-11 cursor-pointer items-center justify-center rounded-full hover:bg-menu-ink/10 active:bg-menu-ink/20" aria-label="Close menu"><MenuMark className="w-6" /></button>
+          <button onClick={close} className="flex size-11 cursor-pointer items-center justify-center rounded-full hover:bg-menu-ink/10 active:bg-menu-ink/20 lg:hidden" aria-label="Close menu"><MenuMark className="w-6" /></button>
         </div>
         {soundStatus === "blocked" && (
           <p data-menu-item className="mt-2 text-xs text-menu-ink/70">

@@ -230,7 +230,7 @@ export const CHAPTERS = [
       {
         id: "viking-1",
         title: "Viking 1 — Lander",
-        audio: "",
+        audio: "/audio/chapters/04-chapter-1.mp3",
         text: [
           "On July 20, 1976, Viking 1 touched down on Chryse Planitia, becoming the first NASA spacecraft to successfully operate on the surface of Mars.",
           "Its mission was to investigate the planet's atmosphere, soil, and possible signs of life. Its cameras returned the first images from its landing site, while its scientific instruments conducted experiments on the Martian environment.",
@@ -260,7 +260,7 @@ export const CHAPTERS = [
       {
         id: "viking-2",
         title: "Viking 2 — Lander",
-        audio: "",
+        audio: "/audio/chapters/04-chapter-2.mp3",
         text: [
           "Following the success of Viking 1, its twin spacecraft, Viking 2, arrived at Utopia Planitia on September 3, 1976.",
           "Like its predecessor, Viking 2 was designed to investigate the Martian environment and search for possible signs of life. It photographed the surrounding landscape, monitored local weather conditions, and carried out experiments on the soil.",
