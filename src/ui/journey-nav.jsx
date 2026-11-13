@@ -15,13 +15,15 @@ export default function JourneyNav({ previous, next }) {
           {previous.label}
         </Link>
       )}
+      <span className={`flex h-10 shrink-0 items-center justify-center px-3 sm:px-5 ${previous ? "mx-1 border-x border-paper/40 sm:mx-2" : "ml-3"}`}>
       <Image
         src="/images/special-star.svg"
         alt=""
         width={40}
         height={40}
-        className={`size-10 shrink-0 px-1 ${previous ? "border-x border-paper/40" : "ml-6"}`}
+        className="size-8 shrink-0"
       />
+      </span>
       {next && (
         <Link href={next.href} className={linkClass}>
           {next.label}

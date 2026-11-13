@@ -11,6 +11,8 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
+const menuLinkState = "hover:bg-menu-ink hover:text-menu-paper focus-visible:bg-menu-ink focus-visible:text-menu-paper aria-[current=page]:bg-menu-ink aria-[current=page]:text-menu-paper transition-colors duration-200 motion-reduce:transition-none";
+
 export default function SiteMenu({ ref, pageRef, chapters, onOpenChange }) {
   const {
     enabled: soundEnabled,
@@ -151,7 +153,7 @@ export default function SiteMenu({ ref, pageRef, chapters, onOpenChange }) {
       ref={dialog}
       id="site-menu"
       aria-label="Site navigation"
-      className="site-menu"
+      className="site-menu cursor-pointer"
       onCancel={(event) => {
         event.preventDefault();
         close();
@@ -160,7 +162,7 @@ export default function SiteMenu({ ref, pageRef, chapters, onOpenChange }) {
         if (event.target === event.currentTarget) close();
       }}
     >
-      <div className="menu-panel text-menu-ink">
+      <div className="menu-panel cursor-auto text-menu-ink">
         <div data-menu-item className="flex items-center justify-between gap-3">
           <button
             onClick={toggleSound}
@@ -177,7 +179,7 @@ export default function SiteMenu({ ref, pageRef, chapters, onOpenChange }) {
                   ? "unavailable"
                   : "off"}
           </button>
-          {/* <button autoFocus onClick={close} className="flex min-h-11 cursor-pointer items-center gap-2 text-sm" aria-label="Close menu">Close <MenuMark className="w-6" /></button> */}
+          <button onClick={close} className="flex size-11 cursor-pointer items-center justify-center rounded-full hover:bg-menu-ink/10 active:bg-menu-ink/20" aria-label="Close menu"><MenuMark className="w-6" /></button>
         </div>
         {soundStatus === "blocked" && (
           <p data-menu-item className="mt-2 text-xs text-menu-ink/70">
@@ -195,7 +197,7 @@ export default function SiteMenu({ ref, pageRef, chapters, onOpenChange }) {
             href="/"
             onClick={(event) => navigate(event, "/")}
             aria-current={pathname === "/" ? "page" : undefined}
-            className="menu-home block px-2 font-display text-[clamp(2rem,2.45vw,3rem)] font-semibold"
+            className={`${menuLinkState} block px-2 font-display text-[clamp(2rem,2.45vw,3rem)] font-semibold`}
           >
             Home
           </Link>
@@ -212,7 +214,7 @@ export default function SiteMenu({ ref, pageRef, chapters, onOpenChange }) {
                   href={chapter.href}
                   onClick={(event) => navigate(event, chapter.href)}
                   aria-current={pathname === chapter.href ? "page" : undefined}
-                  className="menu-chapter flex min-h-11 items-center justify-between gap-2 border-b border-menu-ink/40 pb-2 text-sm xl:text-base 2xl:text-xl"
+                  className={`${menuLinkState} flex min-h-11 w-full items-center justify-between gap-2 border-b border-menu-ink/40 px-2 py-2 text-sm xl:text-base 2xl:text-xl`}
                 >
                   {chapter.label}
                   <span className="text-xs opacity-60">
