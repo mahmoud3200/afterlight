@@ -3,6 +3,7 @@ import { useState } from "react";
 import ArtifactViewer from "./artifact-viewer";
 import NarrationControl from "./narration-control";
 import StoryTranscript from "./story-transcript";
+import StorySources from "./story-sources";
 import "@/components/loading/loading.css";
 export default function ChapterSection({ chapter }) {
   const [selected, setSelected] = useState(0);
@@ -15,7 +16,7 @@ export default function ChapterSection({ chapter }) {
       {chapter.artifacts.length > 1 && <nav aria-label="Objects in this chapter" className="mb-5 flex flex-wrap gap-2">{chapter.artifacts.map((item, index) => <button key={item.id} aria-pressed={selected === index} onClick={() => setSelected(index)} className="cursor-pointer rounded-[2rem] border border-muted px-[.8rem] py-2 text-[.7rem] aria-pressed:bg-paper aria-pressed:text-ink active:scale-95">{item.title.split(" — ")[0]}</button>)}</nav>}
       <StoryTranscript key={`text-${artifact?.id ?? chapter.id}`} paragraphs={text} unbounded={!artifact} />
       <NarrationControl key={`narration-${artifact?.id ?? chapter.id}`} src={artifact?.audio || chapter.audio} />
-      {artifact && <details className="mt-5 text-xs text-muted"><summary className="cursor-pointer py-2">Sources &amp; visual credits</summary><ul className="space-y-2">{artifact.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer" className="underline">{source.label}</a><p>{source.claims}</p></li>)}<li><a href={artifact.assetSource} target="_blank" rel="noreferrer" className="underline">Visual source — {artifact.credit}</a></li></ul></details>}
+      {artifact && <StorySources key={artifact.id} artifact={artifact} />}
     </div>
     {artifact && <ArtifactViewer key={artifact.id} artifact={artifact} />}
   </section>;
