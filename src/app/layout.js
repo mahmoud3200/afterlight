@@ -25,6 +25,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  icons: {
+    icon: { url: "/images/logo.svg", type: "image/svg+xml", sizes: "any" },
+  },
   title: "AfterLight — The mission ends. The legacy doesn’t",
   description:
     "Discover the NASA hardware left behind on the Moon and Mars, and the discoveries it still carries.",
