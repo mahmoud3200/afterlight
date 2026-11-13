@@ -383,7 +383,7 @@ export const CHAPTERS = [
       {
         id: "phoenix",
         title: "Phoenix — Mars Lander",
-        audio: "",
+        audio: "/audio/chapters/06-chapter-1.mp3",
         text: [
           "On May 25, 2008, Phoenix landed in Vastitas Borealis, the northern plains of Mars, with a mission to investigate the planet's icy environment.",
           "Unlike a rover, Phoenix remained in one location. Its robotic arm dug into the soil, collecting samples that could be examined by its onboard instruments.",
@@ -695,7 +695,7 @@ export const CHAPTERS = [
     slug: "ending",
     number: null,
     label: "Ending",
-    title: "Abandoned, but not forgotten",
+    title: "The legacy remains",
     region: "The legacy remains",
     kind: "ending",
     audio: "",
