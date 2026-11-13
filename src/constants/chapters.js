@@ -414,7 +414,7 @@ export const CHAPTERS = [
       {
         id: "insight",
         title: "InSight — Mars Lander",
-        audio: "",
+        audio: "/audio/chapters/06-chapter-2.mp3",
         text: [
           "Not every mission to Mars was designed to explore its surface. Some were sent to understand what lies beneath it.",
           "InSight landed on Elysium Planitia in November 2018 with a unique mission: to study the internal structure of Mars.",
@@ -461,7 +461,7 @@ export const CHAPTERS = [
       {
         id: "ingenuity",
         title: "Ingenuity — Mars Helicopter",
-        audio: "",
+        audio: "/audio/chapters/07-chapter-1.mp3",
         text: [
           "When Ingenuity arrived on Mars beneath the Perseverance rover, it carried an ambitious experiment: could an aircraft fly in the thin atmosphere of another planet?",
           "On April 19, 2021, Ingenuity made history by completing the first powered, controlled flight on another planet.",
@@ -509,7 +509,7 @@ export const CHAPTERS = [
       {
         id: "dawn",
         title: "Dawn — Orbiting Vesta and Ceres",
-        audio: "",
+        audio: "/audio/chapters/08-chapter-1.mp3",
         text: [
           "Dawn was never sent to land on a planet. Instead, it travelled into the asteroid belt to explore two of its largest worlds: Vesta and the dwarf planet Ceres.",
           "Using its advanced ion propulsion system, Dawn became the first spacecraft to orbit two different extraterrestrial bodies during the same mission.",
@@ -539,7 +539,7 @@ export const CHAPTERS = [
       {
         id: "near-shoemaker",
         title: "NEAR Shoemaker — Asteroid Eros",
-        audio: "",
+        audio: "/audio/chapters/08-chapter-2.mp3",
         text: [
           "NEAR Shoemaker began its journey in 1996 with one important destination: the asteroid Eros.",
           "After reaching Eros in 2000, the spacecraft spent months studying its surface, mapping its craters, and collecting information about its composition.",
@@ -585,7 +585,7 @@ export const CHAPTERS = [
       {
         id: "pioneer-10",
         title: "Pioneer 10 — Deep Space",
-        audio: "",
+        audio: "/audio/chapters/09-chapter-1.mp3",
         text: [
           "Launched in 1972, Pioneer 10 began a journey that would take it farther than any previous spacecraft had travelled.",
           "It became the first spacecraft to pass through the asteroid belt and the first to make a closeup exploration of Jupiter.",
@@ -616,7 +616,7 @@ export const CHAPTERS = [
       {
         id: "pioneer-11",
         title: "Pioneer 11 — Deep Space",
-        audio: "",
+        audio: "/audio/chapters/09-chapter-2.mp3",
         text: [
           "Following the path of its sister spacecraft, Pioneer 11 continued humanity's journey into the outer solar system.",
           "Launched in 1973, it first travelled to Jupiter before continuing toward Saturn. In September 1979, it became the first spacecraft to fly past Saturn, returning valuable observations of the planet and its rings.",
@@ -661,7 +661,7 @@ export const CHAPTERS = [
       {
         id: "kepler",
         title: "Kepler — Space Telescope",
-        audio: "",
+        audio: "/audio/chapters/10-chapter-1.mp3",
         text: [
           "Kepler did not explore the surface of another planet. Instead, it spent its mission searching for planets beyond our solar system.",
           "Launched in 2009, the space telescope observed distant stars, looking for tiny changes in their brightness. These changes could reveal planets passing in front of their stars.",
@@ -698,7 +698,7 @@ export const CHAPTERS = [
     title: "The legacy remains",
     region: "The legacy remains",
     kind: "ending",
-    audio: "",
+    audio: "/audio/chapters/ending.mp3",
     backgroundImage: "",
     text: [
       "Some journeys end on distant surfaces. Others continue silently through space.",
