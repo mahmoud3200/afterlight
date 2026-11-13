@@ -57,7 +57,7 @@ Priorities: **Must** = MVP essential; **Should** = important if time allows; **C
 
 ## Implementation principles
 
-- This repository currently uses Next.js App Router, React, JavaScript, and Tailwind; source lives in `src/app`, public assets in `public`. Use npm and preserve `package-lock.json`. Inspect `package.json` before selecting commands or dependencies. Three.js is not yet installed; choose additions deliberately rather than assuming a rendering stack exists.
+- This repository uses Next.js App Router, React, JavaScript, Tailwind, Three.js, React Three Fiber, and Drei; source lives in `src/app`, public assets in `public`. Use npm and preserve `package-lock.json`. Inspect `package.json` before selecting commands or dependencies. Read [docs/three-setup.md](docs/three-setup.md) for scene integration and the local Draco loading helper.
 - Read the installed Next.js documentation before implementation. Keep the generated block above intact and put project guidance outside its markers.
 - Keep browser-only rendering, audio, and interaction behind appropriate Client Component boundaries. Keep content readable independently of WebGL initialization.
 - Model chapters as structured content with stable IDs, artifact references, narrative text/transcript, audio, source citations, and camera/scene cues. Keep mission content separate from rendering logic.

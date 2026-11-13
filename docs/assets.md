@@ -48,16 +48,16 @@ Images are useful fallbacks and modeling references, not 3D representations. FR-
 
 ## Three.js integration
 
-GLB is glTF 2.0 with binary data packaged into one file. Use `GLTFLoader` from the installed Three.js release. Apollo Lunar Module, Ingenuity, Dawn, NEAR Shoemaker, Pioneer, and Kepler require `KHR_draco_mesh_compression`; configure `DRACOLoader` before loading them. Spirit/Opportunity, Viking, and InSight do not require Draco in the downloaded files. Host the matching decoder JS/WASM from the chosen Three.js release locally and preserve its license. Decoder files and Three.js are not installed by this asset-preparation task.
+GLB is glTF 2.0 with binary data packaged into one file. Apollo Lunar Module, Ingenuity, Dawn, NEAR Shoemaker, Pioneer, Kepler, and the converted Lunar Rover require `KHR_draco_mesh_compression`. Spirit/Opportunity, Viking, and InSight do not require Draco in the downloaded files. Three.js, Fiber, Drei, and local decoder files are now installed; see [the setup guide](three-setup.md) and the shared `useArtifactGLTF` helper. `npm run assets:draco` refreshes decoder JS/WASM and license files from the installed release.
 
-Illustrative integration after installing Three.js and supplying its decoder assets:
+Equivalent low-level integration using the installed Three.js package:
 
 ```js
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 
 const draco = new DRACOLoader();
-draco.setDecoderPath('/decoders/draco/'); // Populate from the installed release first.
+draco.setDecoderPath('/decoders/draco/');
 const loader = new GLTFLoader();
 loader.setDRACOLoader(draco);
 const gltf = await loader.loadAsync('/models/apollo-lunar-module.glb');
