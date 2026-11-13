@@ -8,6 +8,7 @@ import ChapterRail from "./chapter-rail";
 import SiteBrand from "./site-brand";
 import JourneyNav from "@/ui/journey-nav";
 import RouteTransition from "./route-transition";
+import PageCurtain from "./page-curtain";
 import SiteMenu from "@/components/menu/site-menu";
 
 export default function SiteLayout({ children, chapters }) {
@@ -42,6 +43,7 @@ export default function SiteLayout({ children, chapters }) {
         </div>
       </div>
       <SiteMenu ref={menu} pageRef={page} chapters={chapters} onOpenChange={setMenuOpen} />
+      <PageCurtain pathname={pathname} />
     </div>
   );
 }

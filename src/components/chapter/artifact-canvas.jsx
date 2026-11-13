@@ -48,7 +48,7 @@ export default function ArtifactCanvas({ artifact, onReady, onFailure }) {
   };
   return <>
     <p id={instructionsId} className="sr-only">Drag to orbit, pinch or scroll to zoom. Keyboard: arrow keys rotate, plus and minus zoom, Home resets the view.</p>
-    <div className="artifact-canvas" tabIndex={0} role="group" aria-label={`Interactive 3D representation of ${artifact.title}`} aria-describedby={instructionsId} onKeyDown={inspectWithKeyboard}>
+    <div className="h-[clamp(380px,60vh,780px)] touch-none focus-visible:rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-paper" tabIndex={0} role="group" aria-label={`Interactive 3D representation of ${artifact.title}`} aria-describedby={instructionsId} onKeyDown={inspectWithKeyboard}>
       <Canvas dpr={[1, 1.5]} camera={{ position: artifact.camera.position, fov: 32, near: 0.1, far: 100 }} gl={{ antialias: true, alpha: true }} fallback={null}>
         <ambientLight intensity={0.3} /><hemisphereLight args={["#dceaff", "#55463a", 0.6]} />
         <directionalLight position={[5, 6, 5]} intensity={1.8} /><directionalLight position={[-4, 2, -3]} intensity={0.8} color="#c4d9ff" />

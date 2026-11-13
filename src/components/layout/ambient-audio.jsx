@@ -103,7 +103,7 @@ export default function AmbientAudio({ children }) {
   }, []);
 
   return (
-    <AmbientAudioContext.Provider value={{ enabled: status === "on", status, toggle, retry: play }}>
+    <AmbientAudioContext.Provider value={{ entered, enabled: status === "on", status, toggle, retry: play }}>
       <audio
         ref={audio}
         src="/audio/romansenykmusic-drone-deep-ambient.mp3"

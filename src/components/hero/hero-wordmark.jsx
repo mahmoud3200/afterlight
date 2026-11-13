@@ -1,10 +1,23 @@
+"use client";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useAmbientAudio } from "@/components/layout/ambient-audio";
 import Image from "next/image";
 import CtaButton from "@/ui/cta-button";
 import SwooshIcon from "@/ui/icons/swoosh";
 
+gsap.registerPlugin(useGSAP);
+
 export default function HeroWordmark() {
+  const root = useRef(null);
+  const { entered } = useAmbientAudio();
+  useGSAP(() => {
+    if (!entered || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    gsap.fromTo("[data-letter]", { yPercent: 110, rotateX: -70, opacity: 0 }, { yPercent: 0, rotateX: 0, opacity: 1, duration: 1.1, stagger: 0.055, ease: "power4.out", clearProps: "all" });
+  }, { scope: root, dependencies: [entered], revertOnUpdate: true });
   return (
-    <div className="flex w-full max-w-157.5 flex-col items-center">
+    <div ref={root} className="flex w-full max-w-157.5 flex-col items-center">
       <div className="relative inline-block text-[clamp(2.5rem,5.2vw,6.25rem)]">
         <SwooshIcon className="pointer-events-none absolute top-[-1.1em] left-[0.98em] w-[4.16em]" />
         <Image
@@ -16,7 +29,7 @@ export default function HeroWordmark() {
         />
 
         <h1
-          id="hero-title"
+          id="hero-title" aria-label="AFTER LIGHT"
           className={[
             "relative z-10 font-display text-[clamp(30px, 3.2vw, 100px)] leading-none whitespace-nowrap text-paper",
             // The rule under the wordmark is drawn as a pseudo-element so it
@@ -24,7 +37,7 @@ export default function HeroWordmark() {
             "before:absolute before:top-full before:left-0 before:mt-7 before:h-0.5 before:w-full before:bg-paper before:content-['']",
           ].join(" ")}
         >
-          AFTER LIGHT
+          <span aria-hidden="true" className="inline-flex overflow-hidden [perspective:600px]">{Array.from("AFTER LIGHT").map((letter, index) => <span key={index} data-letter className="inline-block">{letter === " " ? " " : letter}</span>)}</span>
         </h1>
       </div>
 
