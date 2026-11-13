@@ -1,0 +1,369 @@
+{
+  "retrieved": "2026-11-13",
+  "assets": [
+    {
+      "id": "apollo-lunar-module",
+      "path": "/models/apollo-lunar-module.glb",
+      "source": "https://science.nasa.gov/3d-resources/apollo-lunar-module/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/apollo-lunar-module/Apollo%20Lunar%20Module.glb",
+      "bytes": 716840,
+      "sha256": "379101dfcee399267addf771709107c35e826b0b9e5233272f123e4c8a585c4e",
+      "format": "glTF 2.0 binary",
+      "meshes": 134,
+      "extensionsUsed": [
+        "KHR_draco_mesh_compression",
+        "KHR_materials_specular",
+        "EXT_texture_webp"
+      ],
+      "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+      ],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA/Michael D. Carbajal"
+    },
+    {
+      "id": "spirit-opportunity",
+      "path": "/models/spirit-opportunity.glb",
+      "source": "https://science.nasa.gov/resource/spirit-and-opportunity-rover-3d-model/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/gltf_files/24883_MER_static.glb",
+      "bytes": 11910084,
+      "sha256": "efad9c6275d832d86e7232d63520e48628797d9a7f7c7ff870b28d175ac8b250",
+      "format": "glTF 2.0 binary",
+      "meshes": 1,
+      "extensionsUsed": [],
+      "extensionsRequired": [],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA/JPL-Caltech"
+    },
+    {
+      "id": "viking-lander",
+      "path": "/models/viking-lander.glb",
+      "source": "https://science.nasa.gov/3d-resources/viking-lander/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/viking-lander/Viking%20Lander.glb",
+      "bytes": 1849384,
+      "sha256": "1233dc2c96a1c0b08ca9a20f7ed9c09e0223f06f14f6ae6371349504c1929149",
+      "format": "glTF 2.0 binary",
+      "meshes": 2,
+      "extensionsUsed": [
+        "KHR_materials_specular"
+      ],
+      "extensionsRequired": [],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA/Michael D. Carbajal"
+    },
+    {
+      "id": "insight",
+      "path": "/models/insight.glb",
+      "source": "https://science.nasa.gov/resource/insight-3d-model/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/i/InSight_deployed.glb",
+      "bytes": 22357936,
+      "sha256": "1e944bedb23af07962ba9f2b88d195b561665f255573b29ba7d028293a179387",
+      "format": "glTF 2.0 binary",
+      "meshes": 82,
+      "extensionsUsed": [],
+      "extensionsRequired": [],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+    },
+    {
+      "id": "ingenuity",
+      "path": "/models/ingenuity.glb",
+      "source": "https://science.nasa.gov/3d-resources/ingenuity-mars-helicopter/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/ingenuity-mars-helicopter/Ingenuity%20Mars%20Helicopter.glb",
+      "bytes": 2019408,
+      "sha256": "9e5a5398ab335eae7d46335085301ce46fb7de052300b645debe8bac6d39f2b5",
+      "format": "glTF 2.0 binary",
+      "meshes": 11,
+      "extensionsUsed": [
+        "KHR_draco_mesh_compression",
+        "KHR_materials_clearcoat",
+        "KHR_materials_specular",
+        "KHR_materials_sheen",
+        "KHR_materials_ior",
+        "EXT_texture_webp"
+      ],
+      "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+      ],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA/Brian E. Kumanchik"
+    },
+    {
+      "id": "dawn",
+      "path": "/models/dawn.glb",
+      "source": "https://science.nasa.gov/3d-resources/dawn/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/dawn/Dawn.glb",
+      "bytes": 927020,
+      "sha256": "411249aed791994b6a2014894ad6bd7ca0445dbcf6d5342af9edc5df988f04b7",
+      "format": "glTF 2.0 binary",
+      "meshes": 8,
+      "extensionsUsed": [
+        "KHR_draco_mesh_compression",
+        "EXT_texture_webp"
+      ],
+      "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+      ],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA/Brian E. Kumanchik"
+    },
+    {
+      "id": "near-shoemaker",
+      "path": "/models/near-shoemaker.glb",
+      "source": "https://science.nasa.gov/3d-resources/near-shoemaker/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/near-shoemaker/NEAR%20Shoemaker.glb",
+      "bytes": 701808,
+      "sha256": "f3de2f87c97685b207be97e80d7cdca37d1567dd68204e1feb2d85f90e3adb0c",
+      "format": "glTF 2.0 binary",
+      "meshes": 4,
+      "extensionsUsed": [
+        "KHR_draco_mesh_compression",
+        "EXT_texture_webp"
+      ],
+      "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+      ],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA (no individual author listed)"
+    },
+    {
+      "id": "pioneer-10",
+      "path": "/models/pioneer-10.glb",
+      "source": "https://science.nasa.gov/3d-resources/pioneer/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/pioneer-10/Pioneer%2010.glb",
+      "bytes": 2049840,
+      "sha256": "81443a7fa01cca0dda878cd27692b3307f9c332c4eb8e55a844499d7b350573c",
+      "format": "glTF 2.0 binary",
+      "meshes": 11,
+      "extensionsUsed": [
+        "KHR_draco_mesh_compression",
+        "EXT_texture_webp"
+      ],
+      "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+      ],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA/JPL/Eyes on the Solar System"
+    },
+    {
+      "id": "kepler",
+      "path": "/models/kepler.glb",
+      "source": "https://science.nasa.gov/3d-resources/kepler-a/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/kepler-(a)/Kepler%20(A).glb",
+      "bytes": 2003276,
+      "sha256": "382014d90e2cf3e1f23e931d233547e652fe3629fddfb5acb8a99e2ceb72ff19",
+      "format": "glTF 2.0 binary",
+      "meshes": 7,
+      "extensionsUsed": [
+        "KHR_draco_mesh_compression",
+        "EXT_texture_webp"
+      ],
+      "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+      ],
+      "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "credit": "NASA/Brian E. Kumanchik; NASA/Christian A. Lopez"
+    },
+    {
+      "id": "alsep",
+      "path": "/images/artifacts/alsep.jpg",
+      "source": "https://science.nasa.gov/image-detail/as12-46-6789-alsep/",
+      "download": "https://science.nasa.gov/wp-content/uploads/2024/02/as12-46-6789-alsep.jpg",
+      "credit": "NASA",
+      "format": "JPEG",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "bytes": 135470,
+      "sha256": "bc24d0fe2d2edb2aab7d672bf67da35a896b1f19c241dbdc0ea166751fe66d48",
+      "status": "image fallback; 3D model outstanding",
+      "notes": "Apollo 12 ALSEP archival photograph.",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes."
+    },
+    {
+      "id": "surveyor-3",
+      "path": "/images/artifacts/surveyor-3.jpg",
+      "source": "https://science.nasa.gov/mission/surveyor-3/",
+      "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/as12-48-7134_1280.jpg",
+      "credit": "NASA",
+      "format": "JPEG",
+      "dimensions": [
+        1280,
+        1280
+      ],
+      "bytes": 515887,
+      "sha256": "607b6cb4dccb312025dffef345116a076c34104293b4a0610458bbbc7aff5be3",
+      "status": "image fallback; 3D model outstanding",
+      "notes": "Surveyor 3 visited during Apollo 12; archival photograph.",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes."
+    },
+    {
+      "id": "phoenix",
+      "path": "/images/artifacts/phoenix.jpg",
+      "source": "https://science.nasa.gov/mission/mars-phoenix/",
+      "download": "https://science.nasa.gov/wp-content/uploads/2024/03/phoenix-lander2.jpg",
+      "credit": "NASA/JPL",
+      "format": "JPEG",
+      "dimensions": [
+        2731,
+        1688
+      ],
+      "bytes": 3065072,
+      "sha256": "83679d85f57d277fc1283036fc8aff3fa03a217abd7418ebb21de8a24de674d8",
+      "status": "image fallback; 3D model outstanding",
+      "notes": "Phoenix in a cleanroom on Earth, not on Mars.",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes."
+    },
+    {
+      "id": "sojourner",
+      "path": "/images/artifacts/sojourner.jpg",
+      "source": "https://science.nasa.gov/mission/mars-pathfinder/",
+      "download": "https://science.nasa.gov/wp-content/uploads/2017/12/pia00621-pathfinder-and-sojourner-with-airbags-deflated.jpg",
+      "credit": "NASA/JPL",
+      "format": "JPEG",
+      "dimensions": [
+        2300,
+        1100
+      ],
+      "bytes": 203901,
+      "sha256": "42a8f7dca60b1aab1881516d471f7f469b1a88ecec337f098c72f3e641da03e5",
+      "status": "image fallback; 3D model outstanding",
+      "notes": "PIA00621 color mosaic from Pathfinder imagery; not a single exposure.",
+      "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "transformations": "None; original downloaded bytes.",
+      "captionSource": "https://science.nasa.gov/photojournal/color-mosaic-of-rover-and-terrain/"
+    },
+    {
+      "id": "lunar-rover",
+      "path": "/models/lunar-rover.glb",
+      "source": "https://blenderartists.org/t/nasa-lunar-rover-scene-file/1610886",
+      "download": "https://drive.google.com/drive/folders/1f9qUuz4Q7fYuOeYMCc_9tmY-30K5qGQr",
+      "credit": "Hameed / OldSchool3D",
+      "license": "CC0-1.0 for source mesh; original third-party textures excluded",
+      "licenseEvidence": "docs/licenses/lunar-rover-source.pdf",
+      "format": "glTF 2.0 binary",
+      "bytes": 8174804,
+      "sha256": "c004219419e35f0753d4f0c9c2460d2c02e1191833f66b8156f783d8c5d666f8",
+      "meshes": 131,
+      "extensionsUsed": [
+        "KHR_draco_mesh_compression"
+      ],
+      "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+      ],
+      "status": "Structural checks, Blender 5.2 reimport, and geometry-preview inspection passed; Three.js performance/material review pending",
+      "transformations": "Blender 5.2: vehicle mesh selection, simple replacement PBR materials, no images, 0.15 decimation on meshes above 10000 polygons, Draco level 6, no animations/cameras/lights",
+      "sourceBlendSha256": "57e71602062112b65ce5fcde703e6c44f80648cba66e9cc7b4c574d8b5f678ef",
+      "notes": "About 1.51 million imported vertices; profile for mobile and normalize source scale."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "apollo-lunar-module",
+      "assetId": "apollo-lunar-module",
+      "representation": "model"
+    },
+    {
+      "id": "lunar-roving-vehicle",
+      "assetId": "lunar-rover",
+      "representation": "simplified-model"
+    },
+    {
+      "id": "alsep",
+      "assetId": "alsep",
+      "representation": "image-fallback"
+    },
+    {
+      "id": "surveyor-3",
+      "assetId": "surveyor-3",
+      "representation": "image-fallback"
+    },
+    {
+      "id": "sojourner",
+      "assetId": "sojourner",
+      "representation": "image-fallback"
+    },
+    {
+      "id": "spirit",
+      "assetId": "spirit-opportunity",
+      "representation": "shared-model"
+    },
+    {
+      "id": "opportunity",
+      "assetId": "spirit-opportunity",
+      "representation": "shared-model"
+    },
+    {
+      "id": "viking-1",
+      "assetId": "viking-lander",
+      "representation": "shared-model"
+    },
+    {
+      "id": "viking-2",
+      "assetId": "viking-lander",
+      "representation": "shared-model"
+    },
+    {
+      "id": "phoenix",
+      "assetId": "phoenix",
+      "representation": "image-fallback"
+    },
+    {
+      "id": "insight",
+      "assetId": "insight",
+      "representation": "model"
+    },
+    {
+      "id": "ingenuity",
+      "assetId": "ingenuity",
+      "representation": "model"
+    },
+    {
+      "id": "dawn",
+      "assetId": "dawn",
+      "representation": "model"
+    },
+    {
+      "id": "near-shoemaker",
+      "assetId": "near-shoemaker",
+      "representation": "model"
+    },
+    {
+      "id": "pioneer-10",
+      "assetId": "pioneer-10",
+      "representation": "model"
+    },
+    {
+      "id": "pioneer-11",
+      "assetId": "pioneer-10",
+      "representation": "visual-proxy"
+    },
+    {
+      "id": "kepler",
+      "assetId": "kepler",
+      "representation": "model"
+    }
+  ]
+}

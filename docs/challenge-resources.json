@@ -1,0 +1,76 @@
+{
+  "retrieved": "2026-11-13",
+  "source": "https://www.spaceappschallenge.org/2026/challenges/nasas-discarded-equipment-storytelling/?tab=resources",
+  "resources": [
+    {
+      "title": "NASA Space Science Data Coordinated Archive (NSSDCA)",
+      "url": "https://nssdc.gsfc.nasa.gov/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Apollo Lunar Modules",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Lunar Roving Vehicles (LRVs)",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "ALSEP Scientific Packages",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Surveyor Landers",
+      "url": "https://science.nasa.gov/mission/surveyor-3/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Sojourner Rover",
+      "url": "https://science.nasa.gov/mission/mars-pathfinder/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Spirit & Opportunity",
+      "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Viking 1 & 2 Landers",
+      "url": "https://science.nasa.gov/mission/viking-1/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Phoenix & InSight Landers",
+      "url": "https://science.nasa.gov/mission/insight/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Dawn Spacecraft",
+      "url": "https://science.nasa.gov/mission/dawn/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "NEAR Shoemaker",
+      "url": "https://science.nasa.gov/mission/near-shoemaker/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Pioneer 10 & 11",
+      "url": "https://science.nasa.gov/mission/pioneer-10/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Ingenuity Helicopter",
+      "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/",
+      "implementationStatus": "planned; not yet used in experience"
+    },
+    {
+      "title": "Kepler Space Telescope",
+      "url": "https://science.nasa.gov/mission/kepler/",
+      "implementationStatus": "planned; not yet used in experience"
+    }
+  ]
+}
