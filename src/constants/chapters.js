@@ -304,7 +304,7 @@ export const CHAPTERS = [
       {
         id: "spirit",
         title: "Spirit — Mars Exploration Rover",
-        audio: "",
+        audio: "/audio/chapters/05-chapter-1.mp3",
         text: [
           "Spirit arrived at Gusev Crater in January 2004 with a mission to investigate the geological history of Mars and search for evidence of ancient water.",
           "What began as a planned 90-day mission became a journey lasting more than six years. Spirit travelled approximately 7.73 kilometres, examining rocks and soil that revealed evidence of a much wetter Martian past.",
@@ -336,7 +336,7 @@ export const CHAPTERS = [
       {
         id: "opportunity",
         title: "Opportunity — Mars Exploration Rover",
-        audio: "",
+        audio: "/audio/chapters/05-chapter-2.mp3",
         text: [
           "Opportunity landed on the opposite side of Mars from its twin, Spirit, in January 2004. Its destination was Meridiani Planum, a region selected because its minerals could reveal clues about the planet's watery past.",
           "Originally designed for a 90-Martian-day mission, Opportunity continued exploring for nearly 15 years.",
