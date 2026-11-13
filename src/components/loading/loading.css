@@ -1,0 +1,53 @@
+
+.loading-surface {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  isolation: isolate;
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: max(24px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(24px, env(safe-area-inset-left));
+  overflow-y: auto;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  text-align: center;
+}
+.entry-screen .loading-surface { position: relative; z-index: auto; }
+/* The hairline under the wordmark (Figma node 42:22) is a 1px gradient. */
+.loading-rule {
+  background-image: linear-gradient(to right, rgb(255 255 255 / 0.7), #fff 50%, rgb(255 255 255 / 0.7));
+}
+.loading-track {
+  position: relative;
+  width: min(650px, 68vw);
+  height: 5.2px;
+  overflow: hidden;
+  background: rgb(255 255 255 / 0.4);
+}
+.loading-fill {
+  position: absolute;
+  inset-block: 0;
+  left: 0;
+  width: 100%;
+  background: var(--color-paper);
+  transform-origin: left;
+  transition: transform 700ms ease;
+}
+.loading-fill-indeterminate { width: 34%; animation: loading-line 1.8s ease-in-out infinite; }
+@keyframes loading-line {
+  0% { transform: translateX(-110%); }
+  100% { transform: translateX(310%); }
+}
+.entry-touch-label { display: none; }
+@media (hover: none), (pointer: coarse) {
+  .entry-desktop-label { display: none; }
+  .entry-touch-label { display: inline; }
+  .entry-enter { min-width: 200px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loading-fill { transition: none; }
+  .loading-fill-indeterminate { animation: none; transform: scaleX(1); }
+}

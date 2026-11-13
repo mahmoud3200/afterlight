@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens. Fonts are self-hosted by next/font in `src/app/layout.js`;
+ * the font block is `inline` so utilities resolve the next/font variables.
+ */
+@theme inline {
+  --font-sans: var(--font-poppins);
+  --font-serif: var(--font-playfair);
+  --font-display: var(--font-playfair-display);
+}
+
+@theme {
+  --color-ink: #000000;
+  --color-menu-paper: #fffeef;
+  --color-menu-ink: #303030;
+  --color-paper: #ffffff;
+  --color-muted: rgb(255 255 255 / 0.69);
+  --color-scrim: rgb(0 0 0 / 0.1);
+  --color-pill: rgb(0 0 0 / 0.6);
+}
+
+html {
+  background-color: var(--color-ink);
+}
+
+.entry-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+.entry-screen[open] { display: grid; }
+/* The dialog itself is the opaque surface, so the backdrop must stay clear for
+   the fade-out to reveal the page underneath. */
+.entry-screen::backdrop { background: transparent; }
+.entry-pointer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  border: 1px solid var(--color-paper);
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 12px;
+  background: var(--color-ink);
+}
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .entry-pointer { display: none; }
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+img {
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Static texture remains behind content, so type and controls stay crisp. */
+.grain-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("/images/grains-effect.png");
+  background-size: 250px 250px;
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.15;
+}
+.site-menu {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow-y: auto;
+}
+.site-menu::backdrop { background: transparent; }
+.menu-panel {
+  position: relative;
+  margin-left: auto;
+  width: 100%;
+  min-height: 100%;
+  padding: 24px;
+  isolation: isolate;
+  background: var(--color-menu-paper);
+}
+.menu-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url("/images/grains-effect.png") repeat;
+  background-size: 250px 250px;
+  opacity: 0.15;
+  mix-blend-mode: multiply;
+}
+.site-menu :is(a, button):focus-visible {
+  outline: 2px solid var(--color-menu-ink);
+  outline-offset: 5px;
+}
+.menu-home[aria-current], .menu-home:hover {
+  color: var(--color-menu-paper);
+  background: var(--color-menu-ink);
+}
+.menu-chapter[aria-current] { font-weight: 600; border-bottom-width: 3px; }
+.menu-chapter:hover { opacity: 0.65; }
+@media (min-width: 1024px) {
+  .menu-panel { width: 24%; padding: 24px 1.25vw 32px; background: transparent; }
+  .menu-panel::before { display: none; }
+}

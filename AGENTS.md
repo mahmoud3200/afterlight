@@ -30,6 +30,35 @@ The UI/UX designer is developing the experience. Follow supplied designs and app
 
 Priorities: **Must** = MVP essential; **Should** = important if time allows; **Could** = optional; **Won't** = excluded from this version. No explicit Won't requirements have been supplied. Do not invent exclusions or expand into unrelated features. Implement Must requirements before optional polish. Image fallback permission does not silently remove FR-03: an image-only featured object remains a documented 3D coverage gap.
 
+## File structure
+
+`src/app` holds the routes only. Every page and section component lives in `src/components`, grouped by feature, so the app folder stays a route map and components can be found by what they render rather than by which route happens to use them.
+
+```
+src/
+├─ app/
+│  ├─ layout.js                 # fonts, metadata, <html>/<body>
+│  ├─ page.js                   # "/" — hero entry point
+│  └─ chapter/[slug]/page.js    # SSG chapter routes
+├─ components/                  # page and section components, grouped by feature
+│  └─ hero/                     # hero composition
+├─ ui/                          # buttons, pills and icons reused inside components
+├─ hooks/                       # client hooks
+├─ constants/index.js           # chapter registry — build-time data for SSG only
+├─ styles/globals.css           # Tailwind entry, design tokens, base styles
+└─ lib/                         # non-visual helpers (Three.js setup today)
+```
+
+- **`src/app`** — routes only: `layout.js`, `page.js`, and the chapter route. No feature components here.
+- **`src/components`** — every page/section component, grouped in a folder per feature (`hero/`). A component lives with the feature that owns it and moves to a shared folder only when a second feature imports it.
+- **`src/ui`** — primitives: buttons, navigation pills, icons. No page content, no data fetching, and no imports from `src/components`; a component here receives its destination through props such as `href`. Use [lucide-react](https://lucide.dev) for icons instead of hand-written SVG; keep a custom SVG only for brand artwork that lucide does not provide (the hero arc).
+- **`src/hooks`** — client-only React hooks. Add a folder here only when a hook is shared; one-off logic stays with its component.
+- **`src/constants/index.js`** — build-time chapter registry only: chapter order, slugs, titles, plus `chapterHref()` / `getChapter()` / `getAdjacentChapters()`. Chapter pages are prerendered from `CHAPTERS` through `generateStaticParams`. Static screens such as the hero write their copy directly in the component instead of importing this module; the root layout passes a serializable navigation list from `CHAPTERS` to the shared layout and menu.
+- **`src/styles/globals.css`** — Tailwind entry, the font bridge for `next/font`, and the design tokens (`--color-ink`, `--color-paper`, `--color-muted`, `--color-scrim`, `--color-pill`). Use the generated utilities (`bg-ink`, `text-paper`, …) instead of raw hex values in components.
+- **`src/lib`** — framework-agnostic helpers grouped by concern (`three/`, animation later).
+- Files use kebab-case and export a PascalCase default component. Runtime images live under `public/images/<feature>/` and their provenance is recorded in [docs/assets.md](docs/assets.md).
+- Use `next/link` for chapter and hero navigation so transitions stay client-side (FR-05).
+
 ## Functional requirements and acceptance criteria
 
 | ID | Priority | Required behavior |

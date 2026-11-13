@@ -21,7 +21,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA/Michael D. Carbajal"
+      "credit": "NASA/Michael D. Carbajal",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "spirit-opportunity",
@@ -37,7 +38,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA/JPL-Caltech"
+      "credit": "NASA/JPL-Caltech",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "viking-lander",
@@ -55,7 +57,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA/Michael D. Carbajal"
+      "credit": "NASA/Michael D. Carbajal",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "insight",
@@ -71,7 +74,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+      "credit": "NASA Visualization Technology Applications and Development (VTAD)",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "ingenuity",
@@ -96,7 +100,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA/Brian E. Kumanchik"
+      "credit": "NASA/Brian E. Kumanchik",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "dawn",
@@ -117,7 +122,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA/Brian E. Kumanchik"
+      "credit": "NASA/Brian E. Kumanchik",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "near-shoemaker",
@@ -138,7 +144,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA (no individual author listed)"
+      "credit": "NASA (no individual author listed)",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "pioneer-10",
@@ -159,7 +166,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA/JPL/Eyes on the Solar System"
+      "credit": "NASA/JPL/Eyes on the Solar System",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "kepler",
@@ -180,7 +188,8 @@
       "status": "Structural checks and Blender 5.2 import/geometry preview passed; Three.js runtime/material review pending",
       "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
       "transformations": "None; original downloaded bytes.",
-      "credit": "NASA/Brian E. Kumanchik; NASA/Christian A. Lopez"
+      "credit": "NASA/Brian E. Kumanchik; NASA/Christian A. Lopez",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
     },
     {
       "id": "alsep",
@@ -276,7 +285,42 @@
       "status": "Structural checks, Blender 5.2 reimport, and geometry-preview inspection passed; Three.js performance/material review pending",
       "transformations": "Blender 5.2: vehicle mesh selection, simple replacement PBR materials, no images, 0.15 decimation on meshes above 10000 polygons, Draco level 6, no animations/cameras/lights",
       "sourceBlendSha256": "57e71602062112b65ce5fcde703e6c44f80648cba66e9cc7b4c574d8b5f678ef",
-      "notes": "About 1.51 million imported vertices; profile for mobile and normalize source scale."
+      "notes": "About 1.51 million imported vertices; profile for mobile and normalize source scale.",
+      "runtimeIntegration": "Connected to chapter viewer; observed browser rendering 2026-11-13. Runtime normalization and artistic lighting; exhaustive mobile performance and failure injection pending."
+    },
+    {
+      "id": "moon-chapter-background",
+      "path": "/images/chapter/moon-background.png",
+      "source": "https://www.figma.com/design/uQRdhMfVjV1AGkThTjxAiF/Untitled?node-id=22-148",
+      "download": null,
+      "credit": "Team-supplied artwork; original artist not supplied",
+      "usagePolicy": "Unverified",
+      "format": "PNG",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1893413,
+      "sha256": "65d882720779878dbe19fc108cb57ef9a4d10302f5fd0b7f68a76e645ca34226",
+      "transformations": "None; CSS cover placement and scrim only",
+      "status": "Artistic chapter backdrop; not archival mission photography"
+    },
+    {
+      "id": "mars-chapter-background",
+      "path": "/images/chapter/mars-background.png",
+      "source": "https://www.figma.com/design/uQRdhMfVjV1AGkThTjxAiF/Untitled?node-id=22-148",
+      "download": null,
+      "credit": "Team-supplied artwork; original artist not supplied",
+      "usagePolicy": "Unverified",
+      "format": "PNG",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 1725605,
+      "sha256": "5dd4146d342c1d32ec61a26aac973d7011e1bbfa74e42a6c1f280bf5e98c4107",
+      "transformations": "None; CSS cover placement and scrim only",
+      "status": "Artistic chapter backdrop; not archival mission photography"
     }
   ],
   "artifacts": [
